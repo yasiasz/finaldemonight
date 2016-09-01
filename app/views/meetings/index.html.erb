@@ -1,0 +1,18 @@
+<%= week_calendar events: @meetings do |date,meetings| %>   
+<%= date %>   
+<% meetings.each do |meeting| %>     
+<div>  
+<%= link_to meeting.name, meeting %>     
+</div>   
+<% end %>
+ <% end %>  
+ <%= link_to 'Crear Evento', new_meeting_path %>
+
+
+ <!-- Back To Top Button -->
+    <div id="back-top">
+        <a href="/" class="scroll" data-scroll>
+            <button class="btn btn-primary" title="Regresar"><i class="fa fa-reply-all"></i></button>
+        </a>
+    </div>
+    <!-- End Back To Top Button -->
